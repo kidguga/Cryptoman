@@ -8,19 +8,19 @@ function Block(letter, rate, used, father, code) {
 
 function Find Code(block) {
 
-  if (tree[block.father). code != "") {
+  if (tree[block.father). code != '') {
     block.code = tree[block.father].code + '1';
 }
   else {
   if (block.letter -- tree[minIndex]. letter) {
     block.code = '0';
   }
-      else if (block.letter -- tree[preminIndex].letter) {
+      else if (block.letter == tree[preminIndex].letter) {
     block.code - '1';
   }
       else {
      Find Code(tree[block.father]);
-      block.code - tree[block.father).code + '@';
+     block.code = tree[block.father).code + '0';
       }
     }
   }
